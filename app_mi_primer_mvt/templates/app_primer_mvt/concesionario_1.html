@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concesionario</title>
+</head>
+<body>
+    <h1> Concesionario </h1>
+<table border="1" style="text-align: center;">
+   <tr>
+       <th> Marca </th> <th> Modelo </th> <th> Valor </th>
+   </tr>
+   <tr>
+      {% for concesionario in concesionario %}
+         <tr><td> {{concesionario.Marca}}</td><td> {{concesionario.Modelo}}</td><td> {{concesionario.Valor}}</td></tr>
+      {% endfor %}
+   </tr>
+
+</table>
+    
+</body>
+</html>
